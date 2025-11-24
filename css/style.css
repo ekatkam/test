@@ -227,6 +227,12 @@
     margin-right: 4px;
 }
 
+.rating_icon_half_star {
+    width: 15px;
+    height: 14px;
+    margin-right: 4px;
+}
+
 .rating_figure {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
