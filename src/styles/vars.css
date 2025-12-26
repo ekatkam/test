@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'EuclidFlex';
+    src: url('../fonts/EuclidFlex-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EuclidFlex';
+    src: url('../fonts/EuclidFlex-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-black: #131921;
+    --color-white: #FFFFFF;
+    --color-red: #F2352A;
+    --color-secondary-red: #FF4338;
+    --color-gray: #898C90;
+    --color-secondary-ray: #E9E9E9;
+    --color-yellow: #FDD91C;
+}
