@@ -1,446 +1,372 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/media.css">
     <title>Тестовое задание</title>
 </head>
 <body>
-    <div class="cards">
-        <div class="cards-item">
-            <div class="cards-item-top">
-                <a class="cards-item__img" href="#">
-                    <img src="img/Panteleeva.png" alt="" class="cards-item__picture">
-                    <img src="img/Icon_house.png" alt="" class="cards-item__icon">
-                </a>
-                <div class="cards-item__view">
-                    <a href="#" class="view_icon-1">
-                        <img src="img/View_icon_1.png" alt="">
-                    </a>
-                    <a href="#" class="view_icon-2">
-                        <img src="img/View_icon_2.png" alt="">
-                        <span class="view_icon-2__text">360</span>
-                     </a>
-                    <a href="#" class="view_icon-3">
-                        <img src="img/View_icon_3.png" alt="">
-                    </a>
-                </div>
-                <div class="cards-item__description">
-                    <p class = cards-item__description_text> Трехэтажное здание с подвалом и мезонином на Старой Басманной улице было построено в 1874 году. В нем снимали жилье горожане среднего достатка.</p>
-                </div>
-            </div>
-            <div class="cards-item-bottom">
-                <div class="cards-item__header">
-                    <a href="#" class="cards-item__header_text">Доходный дом Пантелеева</a>
-                    <button class="cards-item__header_like-button" title="Добавить в избранное">
-                        <svg class="like-button" viewBox="0 0 26 24" fill="none" stroke="#131921">
-                            <use href = "svg/sprite.svg#like-button"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="cards-item__location">
-                    <div class="address">
-                        <div class="address__map">
-                            <svg class="address__map-icon" width="17" height="21" viewBox="0 0 17 21" fill="none">
-                                <use href = "svg/sprite.svg#map-pointer"></use>
-                            </svg>
-                        <span class="address__text">ул. Юности, д. 2, ст</span>
-                    </div>
-                        <div class="address__distination">
-                            <svg class="address__distination-icon" width="17" height="22" viewBox="0 0 17 18" fill="none">
-                                <use href = "svg/sprite.svg#route"></use>
-                            </svg>
-                            <span class="address__distination-text">3 км от вас</span>
-                        </div>
-                    </div>
-                    <div class="metro-station">
-                        <svg class="metro-station__icon" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                            <use href = "svg/sprite.svg#metro"></use>
-                        </svg>
-                        <span class="metro-station__text">Арбатская, 3 мин</span>
-                    </div>
-                </div>
-                <div class="cards-item__rating">
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon_half_star">
-                        <use href = "svg/sprite.svg#half_filled_star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#empty_star"></use>
-                    </svg>
-                    <span class="rating_figure">4.56</span>
-                </div>
-            </div>
-        </div>
 
-        <div class="cards-item">
-            <div class="cards-item-top">
-                <a class="cards-item__img" href="#">
-                    <img src="img/V_kino.png" alt="" class="cards-item__picture">
-                    <img src="img/Icon_house.png" alt="" class="cards-item__icon">
-                </a>
-                <div class="cards-item__view">
-                    <a href="#" class="view_icon-1">
-                        <img src="img/View_icon_1.png" alt="">
-                    </a>
-                    <a href="#" class="view_icon-2">
-                        <img src="img/View_icon_2.png" alt="">
-                        <span class="view_icon-2__text">360</span>
-                    </a>
-                    <a href="#" class="view_icon-3">
-                        <img src="img/View_icon_3.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="cards-item-bottom">
-                <div class="cards-item__header">
-                    <a href="#" class="cards-item__header_text">Москва в кино</a>
-                    <button class="cards-item__header_like-button">
-                        <svg class="like-button" viewBox="0 0 26 24" fill="none" stroke="#131921">
-                            <use href = "svg/sprite.svg#like-button"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="cards-item__location">
-                    <div class="address">
-                        <div class="address__map">
-                            <svg class="address__map-icon" width="17" height="21" viewBox="0 0 17 21" fill="none">
-                                <use href = "svg/sprite.svg#map-pointer"></use>
-                            </svg>
-                            <span class="address__text">ул. Юности, д. 2, ст</span>
-                        </div>
-                        <div class="address__distination">
-                            <svg class="address__distination-icon" width="17" height="22" viewBox="0 0 17 18" fill="none">
-                                <use href = "svg/sprite.svg#route"></use>
-                            </svg>
-                            <span class="address__distination-text">3 км от вас</span>
-                        </div>
-                    </div>
-                    <div class="metro-station">
-                        <svg class="metro-station__icon" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                            <use href = "svg/sprite.svg#metro"></use>
-                        </svg>
-                        <span class="metro-station__text">Арбатская, 3 мин</span>
-                    </div>
-                </div>
-                <button class="cards-item__transition-btn">Перейти</button>
-                <div class="cards-item__rating">
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#empty_star"></use>
-                    </svg>
-                    <span class="rating_figure">4.56</span>
-                </div>
-            </div>
-        </div>
+<main class="main">
+    <section>
+        <div class="container">
 
-        <div class="cards-item">
-            <div class="cards-item-top">
-                <a class="cards-item__img" href="#">
-                    <img src="img/Kurakina.png" alt="" class="cards-item__picture">
-                    <img src="img/Icon_house.png" alt="" class="cards-item__icon">
-                </a>
-                <div class="cards-item__view">
-                    <a href="#" class="view_icon-1">
-                        <img src="img/View_icon_1.png" alt="">
-                    </a>
-                    <a href="#" class="view_icon-2">
-                        <img src="img/View_icon_2.png" alt="">
-                        <span class="view_icon-2__text">360</span>
-                    </a>
-                    <a href="#" class="view_icon-3">
-                        <img src="img/View_icon_3.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="cards-item-bottom">
-                <div class="cards-item__header">
-                    <a href="#" class="cards-item__header_text">Городская усадьба С.Б.Куракина. Главный дом</a>
-                    <button class="cards-item__header_like-button">
-                        <svg class="like-button" viewBox="0 0 26 24" fill="none" stroke="#131921">
-                            <use href = "svg/sprite.svg#like-button"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="cards-item__location">
-                    <div class="address">
-                        <div class="address__map">
-                            <svg class="address__map-icon" width="17" height="21" viewBox="0 0 17 21" fill="none">
-                                <use href = "svg/sprite.svg#map-pointer"></use>
-                            </svg>
-                            <span class="address__text">ул. Юности, д. 2, ст</span>
-                        </div>
-                        <div class="address__distination">
-                            <svg class="address__distination-icon" width="17" height="22" viewBox="0 0 17 18" fill="none">
-                                <use href = "svg/sprite.svg#route"></use>
-                            </svg>
-                            <span class="address__distination-text">3 км от вас</span>
-                        </div>
-                    </div>
-                    <div class="metro-station">
-                        <svg class="metro-station__icon" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                            <use href = "svg/sprite.svg#metro"></use>
-                        </svg>
-                        <span class="metro-station__text">Арбатская, 3 мин</span>
-                    </div>
-                </div>
-                <div class="cards-item__rating">
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#empty_star"></use>
-                    </svg>
-                    <span class="rating_figure">4.56</span>
-                </div>
-            </div>
-        </div>
+            <div class="cards">
+                <div class="cards__item card">
+                    <div class="card__image">
+                        <img src="src/images/card_1.jpg" alt="Доходный дом Пантелеева" class="card__img">
 
-        <div class="cards-item">
-            <div class="cards-item-top">
-                <a class="cards-item__img" href="#">
-                    <img src="img/Usadba.png" alt="" class="cards-item__picture">
-                    <img src="img/Icon_house.png" alt="" class="cards-item__icon">
-                </a>
-                <div class="cards-item__view">
-                    <a href="#" class="view_icon-1">
-                        <img src="img/View_icon_1.png" alt="">
-                    </a>
-                    <a href="#" class="view_icon-2">
-                        <img src="img/View_icon_2.png" alt="">
-                        <span class="view_icon-2__text">360</span>
-                    </a>
-                    <a href="#" class="view_icon-3">
-                        <img src="img/View_icon_3.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="cards-item-bottom">
-                <div class="cards-item__header">
-                    <a href="#" class="cards-item__header_text">Усадьба в современной Москве</a>
-                    <button class="cards-item__header_like-button">
-                        <svg class="like-button" viewBox="0 0 26 24" fill="none" stroke="#131921">
-                            <use href = "svg/sprite.svg#like-button"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="cards-item__location">
-                    <div class="address">
-                        <div class="address__map">
-                            <svg class="address__map-icon" width="17" height="21" viewBox="0 0 17 21" fill="none">
-                                <use href = "svg/sprite.svg#map-pointer"></use>
-                            </svg>
-                            <span class="address__text">ул. Юности, д. 2, ст</span>
+                        <div class="card__actions">
+                            <div class="card__house">
+                                <svg class="card__house-icon">
+                                    <use href="src/icons/icons.svg#house"></use>
+                                </svg>
+                            </div>
+                            <div class="card__panorama">
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#image"></use>
+                                </svg>
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#review"></use>
+                                </svg>
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#camera"></use>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="address__distination">
-                            <svg class="address__distination-icon" width="17" height="22" viewBox="0 0 17 18" fill="none">
-                                <use href = "svg/sprite.svg#route"></use>
-                            </svg>
-                            <span class="address__distination-text">3 км от вас</span>
-                        </div>
-                    </div>
-                    <div class="metro-station">
-                        <svg class="metro-station__icon" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                            <use href = "svg/sprite.svg#metro"></use>
-                        </svg>
-                        <span class="metro-station__text">Арбатская, 3 мин</span>
-                    </div>
-                </div>
-                <div class="cards-item__rating">
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#empty_star"></use>
-                    </svg>
-                    <span class="rating_figure">4.56</span>
-                </div>
-            </div>
-        </div>
 
-        <div class="cards-item">
-            <div class="cards-item-top">
-                <a class="cards-item__img" href="#">
-                    <img src="img/V_kino.png" alt="" class="cards-item__picture">
-                    <img src="img/Icon_house.png" alt="" class="cards-item__icon">
-                </a>
-                <div class="cards-item__view">
-                    <a href="#" class="view_icon-1">
-                        <img src="img/View_icon_1.png" alt="">
-                    </a>
-                    <a href="#" class="view_icon-2">
-                        <img src="img/View_icon_2.png" alt="">
-                        <span class="view_icon-2__text">360</span>
-                    </a>
-                    <a href="#" class="view_icon-3">
-                        <img src="img/View_icon_3.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="cards-item-bottom">
-                <div class="cards-item__header">
-                    <a href="#" class="cards-item__header_text">Доходный дом Пантелеева</a>
-                    <button class="cards-item__header_like-button">
-                        <svg class="like-button" viewBox="0 0 26 24" fill="none" stroke="#131921">
-                            <use href = "svg/sprite.svg#like-button"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="cards-item__location">
-                    <div class="address">
-                        <div class="address__map">
-                            <svg class="address__map-icon" width="17" height="21" viewBox="0 0 17 21" fill="none">
-                                <use href = "svg/sprite.svg#map-pointer"></use>
-                            </svg>
-                            <span class="address__text">ул. Юности, д. 2, ст</span>
-                        </div>
-                        <div class="address__distination">
-                            <svg class="address__distination-icon" width="17" height="22" viewBox="0 0 17 18" fill="none">
-                                <use href = "svg/sprite.svg#route"></use>
-                            </svg>
-                            <span class="address__distination-text">3 км от вас</span>
+                        <div class="card__description">
+                            <p class="card__description-text">Трехэтажное здание с подвалом и мезонином на Старой Басманной
+                                улице было построено в 1874 году. В нем снимали жилье горожане среднего достатка.</p>
                         </div>
                     </div>
-                    <div class="metro-station">
-                        <svg class="metro-station__icon" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                            <use href = "svg/sprite.svg#metro"></use>
-                        </svg>
-                        <span class="metro-station__text">Арбатская, 3 мин</span>
-                    </div>
-                </div>
-                <div class="cards-item__rating">
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#empty_star"></use>
-                    </svg>
-                    <span class="rating_figure">4.56</span>
-                </div>
-            </div>
-        </div>
 
-        <div class="cards-item">
-            <div class="cards-item-top">
-                <a class="cards-item__img" href="#">
-                    <img src="img/Panteleeva.png" alt="" class="cards-item__picture">
-                    <img src="img/Icon_house.png" alt="" class="cards-item__icon">
-                </a>
-                <div class="cards-item__view">
-                    <a href="#" class="view_icon-1">
-                        <img src="img/View_icon_1.png" alt="">
-                    </a>
-                    <a href="#" class="view_icon-2">
-                        <img src="img/View_icon_2.png" alt="">
-                        <span class="view_icon-2__text">360</span>
-                    </a>
-                    <a href="#" class="view_icon-3">
-                        <img src="img/View_icon_3.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="cards-item-bottom">
-                <div class="cards-item__header">
-                    <a href="#" class="cards-item__header_text">Доходный дом Пантелеева</a>
-                    <button class="cards-item__header_like-button">
-                        <svg class="like-button" viewBox="0 0 26 24" fill="none" stroke="#131921">
-                            <use href = "svg/sprite.svg#like-button"></use>
-                        </svg>
-                    </button>
-                </div>
-                <div class="cards-item__location">
-                    <div class="address">
-                        <div class="address__map">
-                            <svg class="address__map-icon" width="17" height="21" viewBox="0 0 17 21" fill="none">
-                                <use href = "svg/sprite.svg#map-pointer"></use>
-                            </svg>
-                            <span class="address__text">ул. Юности, д. 2, ст</span>
+                    <div class="card__info">
+                        <div class="card__title">
+                            <a href="#" class="card__link">
+                                <h5 class="card__name">Доходный дом Пантелеева</h5>
+                            </a>
+                            <div class="favorite card__favorite">
+                                <svg class="favorite__icon favorite__icon_active">
+                                    <use href="src/icons/icons.svg#heart"></use>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="address__distination">
-                            <svg class="address__distination-icon" width="17" height="22" viewBox="0 0 17 18" fill="none">
-                                <use href = "svg/sprite.svg#route"></use>
-                            </svg>
-                            <span class="address__distination-text">3 км от вас</span>
-                        </div>
-                    </div>
-                    <div class="metro-station">
-                        <svg class="metro-station__icon" width="22" height="14" viewBox="0 0 22 14" fill="none">
-                            <use href = "svg/sprite.svg#metro"></use>
-                        </svg>
-                        <span class="metro-station__text">Арбатская, 3 мин</span>
-                    </div>
-                </div>
-                <div class="cards-item__rating">
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#star"></use>
-                    </svg>
-                    <svg class="rating_icon">
-                        <use href = "svg/sprite.svg#empty_star"></use>
-                    </svg>
-                    <span class="rating_figure">4.56</span>
-                </div>
-            </div>
-        </div>
 
-    </div>
+                        <div class="card__locations">
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_pin">
+                                    <use href="src/icons/icons.svg#pin"></use>
+                                </svg>
+                                <p class="card__location-text">ул. Юности, д. 2, стр. 1, ВАО</p>
+                            </div>
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_metro">
+                                    <use href="src/icons/icons.svg#metro"></use>
+                                </svg>
+                                <p class="card__location-text">Арбатская, 3 мин</p>
+                            </div>
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_route">
+                                    <use href="src/icons/icons.svg#route"></use>
+                                </svg>
+                                <p class="card__location-text">3 км от вас</p>
+                            </div>
+                        </div>
+
+                        <div class="card_rating rating">
+                            <div class="rating__stars">
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star rating__star_half">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star rating__star_empty">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                            </div>
+                            <p class="rating__text">4.56</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards__item card">
+                    <div class="card__image">
+                        <img src="src/images/card_2.jpg" alt="Доходный дом Пантелеева 2" class="card__img">
+
+                        <div class="card__actions">
+                            <div class="card__house">
+                                <svg class="card__house-icon">
+                                    <use href="src/icons/icons.svg#house"></use>
+                                </svg>
+                            </div>
+                            <div class="card__panorama">
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#image"></use>
+                                </svg>
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#review"></use>
+                                </svg>
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#camera"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="card__description">
+                            <p class="card__description-text">Трехэтажное здание с подвалом и мезонином на Старой Басманной
+                                улице было построено в 1874 году. В нем снимали жилье горожане среднего достатка.</p>
+                        </div>
+                    </div>
+
+                    <div class="card__info">
+                        <div class="card__title">
+                            <a href="#" class="card__link">
+                                <h5 class="card__name">Доходный дом Пантелеева</h5>
+                            </a>
+                            <div class="favorite card__favorite">
+                                <svg class="favorite__icon">
+                                    <use href="src/icons/icons.svg#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <button class="card__button button">Перейти</button>
+
+                        <div class="card__locations">
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_pin">
+                                    <use href="src/icons/icons.svg#pin"></use>
+                                </svg>
+                                <p class="card__location-text">ул. Юности, д. 2, стр. 1, ВАО</p>
+                            </div>
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_metro">
+                                    <use href="src/icons/icons.svg#metro"></use>
+                                </svg>
+                                <p class="card__location-text">Арбатская, 3 мин</p>
+                            </div>
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_route">
+                                    <use href="src/icons/icons.svg#route"></use>
+                                </svg>
+                                <p class="card__location-text">3 км от вас</p>
+                            </div>
+                        </div>
+
+                        <div class="card_rating rating">
+                            <div class="rating__stars">
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star rating__star_half">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star rating__star_empty">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                            </div>
+                            <p class="rating__text">4.56</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards__item card">
+                    <div class="card__image">
+                        <img src="src/images/card_1.jpg" alt="Доходный дом Пантелеева" class="card__img">
+
+                        <div class="card__actions">
+                            <div class="card__house">
+                                <svg class="card__house-icon">
+                                    <use href="src/icons/icons.svg#house"></use>
+                                </svg>
+                            </div>
+                            <div class="card__panorama">
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#image"></use>
+                                </svg>
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#review"></use>
+                                </svg>
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#camera"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="card__description">
+                            <p class="card__description-text">Трехэтажное здание с подвалом и мезонином на Старой Басманной
+                                улице было построено в 1874 году. В нем снимали жилье горожане среднего достатка.</p>
+                        </div>
+                    </div>
+
+                    <div class="card__info">
+                        <div class="card__title">
+                            <a href="#" class="card__link">
+                                <h5 class="card__name">Доходный дом Пантелеева</h5>
+                            </a>
+                            <div class="favorite card__favorite">
+                                <svg class="favorite__icon favorite__icon_active">
+                                    <use href="src/icons/icons.svg#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="card__locations">
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_pin">
+                                    <use href="src/icons/icons.svg#pin"></use>
+                                </svg>
+                                <p class="card__location-text">ул. Юности, д. 2, стр. 1, ВАО</p>
+                            </div>
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_metro">
+                                    <use href="src/icons/icons.svg#metro"></use>
+                                </svg>
+                                <p class="card__location-text">Арбатская, 3 мин</p>
+                            </div>
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_route">
+                                    <use href="src/icons/icons.svg#route"></use>
+                                </svg>
+                                <p class="card__location-text">3 км от вас</p>
+                            </div>
+                        </div>
+
+                        <div class="card_rating rating">
+                            <div class="rating__stars">
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star rating__star_half">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star rating__star_empty">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                            </div>
+                            <p class="rating__text">4.56</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards__item card">
+                    <div class="card__image">
+                        <img src="src/images/card_1.jpg" alt="Доходный дом Пантелеева" class="card__img">
+
+                        <div class="card__actions">
+                            <div class="card__house">
+                                <svg class="card__house-icon">
+                                    <use href="src/icons/icons.svg#house"></use>
+                                </svg>
+                            </div>
+                            <div class="card__panorama">
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#image"></use>
+                                </svg>
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#review"></use>
+                                </svg>
+                                <svg class="card__panorama-icon">
+                                    <use href="src/icons/icons.svg#camera"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="card__description">
+                            <p class="card__description-text">Трехэтажное здание с подвалом и мезонином на Старой Басманной
+                                улице было построено в 1874 году. В нем снимали жилье горожане среднего достатка.</p>
+                        </div>
+                    </div>
+
+                    <div class="card__info">
+                        <div class="card__title">
+                            <a href="#" class="card__link">
+                                <h5 class="card__name">Доходный дом Пантелеева</h5>
+                            </a>
+                            <div class="favorite card__favorite">
+                                <svg class="favorite__icon favorite__icon_active">
+                                    <use href="src/icons/icons.svg#heart"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="card__locations">
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_pin">
+                                    <use href="src/icons/icons.svg#pin"></use>
+                                </svg>
+                                <p class="card__location-text">ул. Юности, д. 2, стр. 1, ВАО</p>
+                            </div>
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_metro">
+                                    <use href="src/icons/icons.svg#metro"></use>
+                                </svg>
+                                <p class="card__location-text">Арбатская, 3 мин</p>
+                            </div>
+                            <div class="card__location">
+                                <svg class="card__location-icon card__location-icon_route">
+                                    <use href="src/icons/icons.svg#route"></use>
+                                </svg>
+                                <p class="card__location-text">3 км от вас</p>
+                            </div>
+                        </div>
+
+                        <div class="card_rating rating">
+                            <div class="rating__stars">
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star rating__star_half">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                                <svg class="rating__star rating__star_empty">
+                                    <use href="src/icons/icons.svg#star"></use>
+                                </svg>
+                            </div>
+                            <p class="rating__text">4.56</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
 </body>
 </html>
